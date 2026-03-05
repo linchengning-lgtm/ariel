@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>简历 - Grow with Ariel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <p class="brand-subtitle">This is</p>
+            <h1>Grow with Ariel</h1>
+            <p class="title">Founded in Feb 2024<br>Contact us</p>
+            <p class="email"><a href="mailto:owen@findariel.com">owen@findariel.com</a></p>
+            
+            <ul class="menu">
+                <li><a href="Index.html#who-we-are">Who We Are</a></li>
+                <li><a href="Index.html#what-we-provide">What We Provide</a></li>
+                <li><a href="Index.html" onclick="openPigeonhole(event)">Pigeonhole</a></li>
+                </ul>
+        </nav>
+
+        <main class="content">
+            <section class="cv-section">
+                <h3>教育背景 (Education)</h3>
+                <div class="cv-entry">
+                    <div class="cv-header">
+                        <span class="cv-title">博士学位</span>
+                        <span class="cv-date">2020 - 2024</span>
+                    </div>
+                    <p class="cv-subtitle">大学名称 | 专业方向</p>
+                    <p class="cv-description">简要描述你的研究方向和主要成果</p>
+                </div>
+            </section>
+
+            <section class="cv-section">
+                <h3>工作经验 (Experience)</h3>
+                <div class="cv-entry">
+                    <div class="cv-header">
+                        <span class="cv-title">职位名称</span>
+                        <span class="cv-date">2024 - 现在</span>
+                    </div>
+                    <p class="cv-subtitle">公司/机构名称</p>
+                    <ul class="cv-list">
+                        <li>主要工作职责描述</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        function openPigeonhole(e) {
+            e.preventDefault();
+            window.location.href = 'Index.html';
+            setTimeout(() => {
+                document.getElementById('pigeonhole-modal')?.style.display = 'block';
+            }, 100);
+        }
+    </script>
+</body>
+</html>
